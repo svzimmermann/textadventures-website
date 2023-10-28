@@ -4,6 +4,7 @@
 }
 
 .seitenbeschreibung {
+    margin-top: 2ch;
     order: 1;
 }
 
@@ -15,6 +16,7 @@
 .beispielscreenshot > img {
     width: 100%;
     height: auto;
+    border: 5px double #00C800;
 }
 
 .sektionsbeschreibungen {
@@ -34,16 +36,18 @@
 
     .sektionsbeschreibungen {
         order: 2;
+        margin: 2ch;
     }
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
 
     .beispielscreenshot {
         flex-basis: 0;
-        flex-grow: 1;
+        flex-grow: 2;
         order: 2;
+        margin: 2ch;
     }
 
 }
