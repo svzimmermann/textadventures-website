@@ -26,10 +26,11 @@ header {
     top: 0;
     border-bottom: 3px dashed #00C800;
     border-top: 3px dashed #00C800;
+    background-image: linear-gradient(#000, #444, #000);
 }
 
 .navigation {
-    background-image: linear-gradient(#000, #444, #000);
+
 }
 
 .navigation {
@@ -41,11 +42,12 @@ header {
 .navigation li {
     flex-grow: 1;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .link-navigation,
 .link-navigation:visited {
+    font-size: 4rem;
     color: #00C800;
     text-decoration: none;
     text-shadow: 5px 5px 5px black;
