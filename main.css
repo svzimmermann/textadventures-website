@@ -22,7 +22,6 @@ header, main {
 }
 
 header {
-    background-color: yellow;
     position: sticky;
     top: 0;
     border-bottom: 3px dashed #00C800;
