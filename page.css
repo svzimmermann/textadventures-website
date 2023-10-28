@@ -1,0 +1,49 @@
+.seitenbeschreibung, .beispielscreenshot, .sektionsbeschreibungen {
+    flex-basis: 100%;
+    /*outline: 3px solid yellow;*/
+}
+
+.seitenbeschreibung {
+    order: 1;
+}
+
+.beispielscreenshot {
+    flex-basis: 100%;
+    order: 2;
+}
+
+.beispielscreenshot > img {
+    width: 100%;
+    height: auto;
+}
+
+.sektionsbeschreibungen {
+    order: 3;
+}
+
+@media (min-width: 800px) {
+
+    .seitenbeschreibung, .sektionsbeschreibungen {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .beispielscreenshot {
+        order: 3;
+    }
+
+    .sektionsbeschreibungen {
+        order: 2;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .beispielscreenshot {
+        flex-basis: 0;
+        flex-grow: 1;
+        order: 2;
+    }
+
+}
