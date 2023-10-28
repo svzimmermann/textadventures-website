@@ -40,6 +40,10 @@ header {
     padding: 1px 7px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .link-navigation,
 .link-navigation:visited {
     font-size: 1.7rem;
@@ -82,17 +86,17 @@ p {
 }
 
 em {
-    color: yellow;
+    color: orange;
     font-style: normal;
 }
 
 strong {
-    color: red;
+    color: yellow;
     font-weight: normal;
 }
 
 em strong, strong em {
-    color: orange;
+    color: red;
 }
 
 mark {
@@ -100,3 +104,22 @@ mark {
     color: black;
 
 }
+
+a::before {
+    content: "↳";
+}
+
+a, a:visited a::before {
+    color: inherit;
+}
+
+a:hover {
+    animation: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    50% {color: white;}
+}
+
