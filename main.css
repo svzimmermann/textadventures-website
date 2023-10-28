@@ -65,28 +65,38 @@ h1, h2, h3 {
 
 h1 {
     font-size: 1.7rem;
+    border-bottom: 4px dashed white;
+    border-top: 4px dashed white;
 }
 
 h2 {
-    font-size: 1.6rem;
-}
-
-h3 {
     font-size: 1.5rem;
 }
 
+h3 {
+    font-size: 1.3rem;
+}
+
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 em {
-
+    color: yellow;
+    font-style: normal;
 }
 
 strong {
+    color: red;
+    font-weight: normal;
+}
 
+em strong, strong em {
+    color: orange;
 }
 
 mark {
+    background-color: #00C800;
+    color: black;
 
 }
