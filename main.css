@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-color: black;
     color: #00C800;
     font-family: monospace;
@@ -22,7 +22,7 @@ header, main {
 }
 
 header {
-    /*background-color: yellow;*/
+    background-color: yellow;
     position: sticky;
     top: 0;
     border-bottom: 3px dashed #00C800;
@@ -59,16 +59,14 @@ header {
 
 main {
     /*background-color: red;*/
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 
 .seitenbeschreibung, .beispielscreenshot, .sektionsbeschreibungen {
     flex-basis: 100%;
+    /*outline: 3px solid yellow;*/
 }
 
 .beispielscreenshot {
