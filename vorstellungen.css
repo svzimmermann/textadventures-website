@@ -12,6 +12,10 @@ header{
 
 .picture-content{
     margin: 1%;
+    border-bottom: 0.1rem dashed #00C800;
+    &:last-child{
+        border-bottom: none;
+    }
 }
 
 figcaption{
@@ -39,12 +43,21 @@ h2{
 
 /* Media query for screens 800px and higher*/
 @media (min-width: 800px){
+    h2{
+        text-align: left;
+        padding-bottom: 12px;
+    }
+
     .picture-content{
         display: flex;
         flex-direction: row;
         align-self: flex-start; /*Align items to the top of the container*/
         text-align: left; /*align text or picture to the left*/
         border-bottom: 0.2rem dashed #00C800;
+    }
+
+    .picture-content:last-child{
+        border-bottom: none;
     }
 
     .textadventurePicture {
