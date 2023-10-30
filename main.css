@@ -136,8 +136,8 @@ header {
 }
 
 .link-navigation:hover {
-    color: slategrey;
-    transition: color 0.5s;
+    color: white;
+    transition: color 0.3s;
     animation: none;
 }
 
