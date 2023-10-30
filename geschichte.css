@@ -1,0 +1,82 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seitenbeschreibung, .beispielscreenshot, .sektionsbeschreibungen {
+    flex-basis: 100%;
+    /*outline: 3px solid yellow;*/
+}
+
+.seitenbeschreibung {
+    margin-top: 2ch;
+}
+
+.beispielscreenshot > img {
+    width: 100%;
+    height: auto;
+    border: 5px double #00C800;
+}
+
+.beispielscreenshot {
+    margin-top: 2ch;
+    margin-bottom: 2ch;
+}
+
+@media (min-width: 768px) {
+
+    .seitenbeschreibung, .sektionsbeschreibungen {
+        flex: 1 0 0;
+    }
+
+    .seitenbeschreibung {
+        order: 1;
+    }
+
+    .beispielscreenshot {
+        order: 2;
+    }
+
+    .sektionsbeschreibungen {
+        order: 3;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .beispielscreenshot {
+        flex: 3 0 0;
+        order: 2;
+        margin: 2ch;
+    }
+}
+
+header {
+    z-index: 2;
+}
+
+/* Wackel-Animation */
+
+.beispielscreenshot-hitchhiker:hover, .beispielscreenshot-planetfall:hover {
+    animation: shake 0.8s;
+    transform: translate(0, 0);
+    z-index: 1;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate(-1px, 0);
+    }
+
+    20%, 80% {
+        transform: translate(2px, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate(-4px, 0);
+    }
+
+    40%, 60% {
+        transform: translate(4px, 0);
+    }
+}
