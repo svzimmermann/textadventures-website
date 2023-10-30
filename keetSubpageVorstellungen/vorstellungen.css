@@ -1,0 +1,71 @@
+/* Default-style for content-box*/
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Center items horizontally*/
+    text-align: center; /*Center text content*/
+}
+
+.picture-content{
+    margin: 1%;
+}
+
+figcaption{
+    font-size: 1.0rem;
+    margin-top: 0;
+    margin-bottom: 3%;
+}
+
+.textadventurePicture img{
+    max-width: 100%;
+    height: auto;
+    border: 5px double #00C800;
+}
+
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-content{
+    text-align: left;
+    line-height: 0.9;
+
+}
+
+
+/* Media query for screens 800px and higher*/
+@media (min-width: 800px){
+    .picture-content{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start; /*Align items to the top of the container*/
+        text-align: left; /*align text or picture to the left*/
+        border-bottom: 0.2rem dashed #00C800;
+    }
+
+    .textadventurePicture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /*Center the picture vertically*/
+        flex: 1;
+    }
+
+    /*Animation in Kombination mit dem @keyframes move*/
+    .textadventurePicture > img{
+        height: auto;
+        position: relative;
+        animation: move 3s ease-in-out forwards;
+
+    }
+
+    @keyframes move {
+        from {left: -200px;}
+        to {left: 0;}
+    }
+
+    .text-content{
+        flex: 1;
+        align-self: flex-start; /*Align the text to the top of the container*/
+    }
+}
