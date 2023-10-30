@@ -172,50 +172,51 @@ main {
 
 /* Zweizeilig */
 
-@media (min-width: 500px) {
+
+@media (min-width: 444px) and (max-width: 596px) {
     header {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
-@media (min-width: 600px) {
+/*@media (min-width: 600px) {*/
+/*    header {*/
+/*        font-size: 2rem;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 700px) {*/
+/*    header {*/
+/*        font-size: 2rem;*/
+/*    }*/
+/*}*/
+
+/* Ab hier: Warten, bis einzeilige Darstellung möglich */
+/* Erst dann weiter vergrößern */
+
+@media (min-width: 1025px) {
     header {
         font-size: 2.5rem;
     }
 }
 
-@media (min-width: 700px) {
-    header {
-        font-size: 3rem;
-    }
-}
+/*@media (min-width: 1200px) {*/
+/*    header {*/
+/*        font-size: 2.5rem;*/
+/*    }*/
+/*}*/
 
-/* Ab hier: Warten, bis einzeilige Darstellung möglich */
-/* Erst dann weiter vergrößern */
+/*@media (min-width: 1400px) {*/
+/*    header {*/
+/*        font-size: 3.4rem;*/
+/*    }*/
+/*}*/
 
-@media (min-width: 1100px) {
-    header {
-        font-size: 3.0rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    header {
-        font-size: 3.2rem;
-    }
-}
-
-@media (min-width: 1400px) {
-    header {
-        font-size: 3.4rem;
-    }
-}
-
-@media (min-width: 1600px) {
-    header {
-        font-size: 3.6rem;
-    }
-}
+/*@media (min-width: 1600px) {*/
+/*    header {*/
+/*        font-size: 3.6rem;*/
+/*    }*/
+/*}*/
 
 /* Weitere Idee: Ab sehr(!) großen Bildschirmen die */
 /* Lesefläche möglichst gleichbleibend halten */
