@@ -1,3 +1,7 @@
+header{
+    z-index: 1; /*damit das Bild auf der linken Seite beim Scrollen hinter der Navigationsleiste verschwindet*/
+}
+
 /* Default-style for content-box*/
 .content-container{
     display: flex;
@@ -32,7 +36,6 @@ h2{
     line-height: 0.9;
 
 }
-
 
 /* Media query for screens 800px and higher*/
 @media (min-width: 800px){
